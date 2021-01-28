@@ -1,6 +1,6 @@
 FROM	node:alpine
 
-WORKDIR /app
+WORKDIR	/app
 
 RUN	npm install ws node-static
 
