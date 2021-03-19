@@ -1,5 +1,8 @@
 FROM	node:alpine
 
+ARG	VERSION
+ENV	Version=$VERSION
+
 WORKDIR	/app
 
 RUN	npm install ws node-static
