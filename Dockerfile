@@ -1,7 +1,11 @@
 FROM	node:alpine
 
-ARG	VERSION
-ENV	Version=$VERSION
+ARG	VERSION="unknown"
+
+LABEL	org.opencontainers.image.description="Just a little websocket demo.."
+LABEL	org.opencontainers.image.source="https://github.com/casperklein/docker-websocket-demo/"
+LABEL	org.opencontainers.image.title="docker-websocket-demo"
+LABEL	org.opencontainers.image.version="$VERSION"
 
 WORKDIR	/app
 
